@@ -40,7 +40,7 @@ function WatchNav({ handleToggle }) {
  
   const loginFun=()=>{
     if(currentUser._id) return 
-  window.location.href = "http://localhost:3000/auth/google";
+  window.location.href = "https://youtubestudio-1.onrender.com/auth/google";
 }
 
 const uploadFun=()=>{

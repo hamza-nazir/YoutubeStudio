@@ -8,7 +8,7 @@ export default function NotLoggedIn() {
 
    const {dialogOpenWithLogin,setDialogOpenWithLogin} =useContext(myContext);
     const loginFun=async()=>{
-     window.location.href = "http://localhost:3000/auth/google";
+     window.location.href = "https://youtubestudio-1.onrender.com/auth/google";
 
     }
   return (
