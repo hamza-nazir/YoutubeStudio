@@ -29,7 +29,7 @@ const store = new MongoStore({
   crypto: { secret: "hamzaSecret" },
   touchAfter: 24 * 3600
 });
-app.use(cors({ origin: process.env.FRONT_END,credentials: true,}));
+app.use(cors({ origin: 'https://youtube-studio-clone.vercel.app',credentials: true,}));
 app.use(session({ store,secret: "hamzaSecret", resave: false,saveUninitialized: false, cookie: { maxAge: 1000 * 60 * 60 * 24 * 30  }}));
 app.use(passport.initialize());
 app.use(passport.session());
