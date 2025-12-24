@@ -29,8 +29,20 @@ const store = new MongoStore({
   crypto: { secret: "hamzaSecret" },
   touchAfter: 24 * 3600
 });
-app.use(cors({ origin: 'https://youtube-studio-clone.vercel.app',credentials: true,}));
-app.use(session({ store,secret: "hamzaSecret", resave: false,saveUninitialized: false, cookie: { maxAge: 1000 * 60 * 60 * 24 * 30  }}));
+app.use(cors({ origin: process.env.FRONT_END,credentials: true,}));
+app.use(session({ 
+    
+    secret: "hamzaSecret", 
+    resave: false,
+    saveUninitialized: false, 
+    proxy: true, // Required for Render/Heroku to trust the headers
+    cookie: { 
+        maxAge: 1000 * 60 * 60 * 24 * 30,
+        sameSite: 'none', // Critical for cross-site cookies
+        secure: true,     // Critical: must be true if sameSite is 'none'
+        httpOnly: true    // Good for security
+    }
+}));
 app.use(passport.initialize());
 app.use(passport.session());
 app.get( "/auth/google",passport.authenticate("google", { scope: ["profile", "email"],   prompt: 'select_account'   }));
