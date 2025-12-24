@@ -1,0 +1,49 @@
+
+
+
+.hidding-setting-scroll{
+  
+  overflow-x: hidden;
+
+}
+
+.hidding-setting-scroll::-webkit-scrollbar {
+  width: 15px;
+}
+
+.hidding-setting-scroll::-webkit-scrollbar-track {
+  background: white; 
+}
+
+
+
+
+
+
+
+
+.studio-hide-scroll::-webkit-scrollbar-thumb {
+  background-color: white;
+  border-radius: 4px;
+}
+
+.studio-hide-scroll:hover::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+}
+
+
+.studio-hide-scroll::-webkit-scrollbar {
+  width: 8px;
+  background: transparent;
+  opacity: 0; 
+  transition: opacity 0.7s;
+}
+
+.studio-hide-scroll:hover::-webkit-scrollbar {
+  opacity: 1; 
+}
+
+.studio-hide-scroll::-webkit-scrollbar-thumb {
+  background-color: white;
+  border-radius: 4px;
+}

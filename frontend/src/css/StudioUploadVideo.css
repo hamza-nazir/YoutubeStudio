@@ -1,0 +1,169 @@
+#uploading-animation-rocket{
+
+    animation-name: VideoRocketAtUploadGoingUp;
+      animation-duration: 2s;
+     
+}
+
+#uploading-animation-circle{
+overflow: hidden;
+}
+
+
+
+.studio-details-right-div{
+      
+  height: 200px;
+  position: sticky;
+  top: 0px;   
+}
+
+
+.textarea{
+      outline: none;
+}
+
+.studio-col {
+  /* ... existing styles for border-dotted, padding ... */
+  display: grid; /* Enable grid container */
+  place-items: center; /* Center horizontally and vertically */
+}
+.border-dotted {
+  border: 1px dashed #c4c1c1;
+}
+
+
+.form-check-input:focus {
+  box-shadow: 0 0 0 0.25rem rgba(0,0,0,0.25) !important;
+  border-color: black !important;
+}
+
+.red-border{
+  border: 1px solid red;
+  border-radius: 5px;
+}
+
+.studio-scroll::-webkit-scrollbar {
+  width: 8px;       
+  height: 8px;      
+}
+
+.studio-scroll::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 5px;
+}
+
+.studio-scroll::-webkit-scrollbar-thumb {
+  background: #888;  
+  border-radius: 4px;
+}
+
+.studio-scroll::-webkit-scrollbar-thumb:hover {
+  background: #555;    
+}
+
+/* 
+@media (max-width:950px) {
+
+  .copy-div{
+  display: none;
+}
+  
+}
+
+@keyframes VideoRocketAtUploadGoingUp {
+    0%{
+          transform: translateY(0);
+    }
+    10%{
+         transform: translateY(-10px);
+    }
+    20%{
+         transform: translateY(-20px);
+    }
+    50%{
+          transform: translateY(-50px);
+    }
+    100%{
+          transform: translateY(-100px);
+    }
+} */
+
+
+
+
+#uploading-animation-circle {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#uploading-animation-rocket {
+  animation: YouTubeUploadRocket 1.0s ease-in-out forwards;
+}
+
+ .custom-radio:checked::before {
+    content: '';
+    display: block;
+    width: 12px;
+    height: 12px;
+    background: #000000; 
+    border-radius: 50%;
+    position: relative;
+    left: 3px;
+    top: 2px;
+  }
+  video {
+  pointer-events: auto !important;
+}
+
+video::-webkit-media-controls-fullscreen-button {
+  display: none !important;
+}
+  .custom-radio {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #000000; 
+    border-radius: 50%;
+    margin-right: 8px;
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+  }
+
+
+  
+@media (max-width:995px) {
+  
+  .scroll-video-box,.studio-details-right-div{
+  display: none;
+  }
+
+}
+
+@keyframes YouTubeUploadRocket {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+  30% {
+    transform: translateY(-10px) scale(1.02);
+  }
+  60% {
+    transform: translateY(-25px) scale(1.05);
+  }
+  80% {
+    transform: translateY(-40px) scale(1.08);
+    opacity: 0.9;
+  }
+  100% {
+    transform: translateY(-70px) scale(1.1);
+    opacity: 0;
+  }
+}
+
+
+
+

@@ -1,0 +1,18 @@
+.navbar-studio{
+    height: 50px;
+    background-color: white;
+    position:sticky;
+    top: 0;
+}
+/* 
+ mic-studio */
+
+ @media (max-width:600px) {
+    .mic-studio{
+        display: none;
+    }
+    .image-sn-div{
+        width: 50px;
+    }
+    
+ }

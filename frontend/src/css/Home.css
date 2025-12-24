@@ -1,0 +1,18 @@
+.flex-home-layout{
+    display: flex;
+    
+}
+.home-left-aside{
+
+      height: calc(100vh - 50px);
+      position:sticky;
+      overflow-y: auto;
+      top: 50px;
+}
+
+.home-left-aside,.home-right-aside{
+      transition: height 0.3s ease;
+      min-width: 90px !important;
+      transition: all 0.3s ease;
+
+}

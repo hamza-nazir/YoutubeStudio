@@ -1,0 +1,19 @@
+.studio-dashboard-parent {
+  display: flex;
+}
+
+
+.dash-left {
+min-width: 50px;
+
+  position: fixed;
+  top: 50px; 
+  height: 100vh;
+
+}
+.dash-left,.dash-right{
+      transition: height 0.3s ease;
+      
+      transition: all 0.3s ease;
+
+}

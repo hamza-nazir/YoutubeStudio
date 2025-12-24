@@ -1,0 +1,57 @@
+
+.xlarge-text{
+  font-size: clamp(23px,3vw,40px); 
+}
+.large-text {
+  font-size: clamp(20px,3vw,30px); 
+
+}
+.medium-text{
+    font-size: clamp(20px,3vw,25px); 
+}
+.small-text{
+    font-size: clamp(15px,3vw,17px); 
+}
+.msmall-text{
+    font-size: clamp(12px,3vw,15px); 
+}
+.xsmall-text{
+    font-size: clamp(10px,3vw,12px); 
+}
+.ptext{
+      font-size: 13px; 
+}
+.flex-between{
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+}
+.flex-center{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+
+.flex-evenly{
+  display: flex;
+  justify-content:space-evenly;
+  align-items: center;
+}
+
+
+.flex-around{
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+}
+.flex-end{
+  display: flex;
+  justify-content:flex-end;
+  align-items: center;
+}
+
+.wrap-text {
+  white-space: normal;  /* allow text to wrap */
+  word-wrap: break-word; /* break long words if needed */
+  overflow-wrap: break-word; /* modern version */
+}
