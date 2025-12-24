@@ -20,7 +20,7 @@ const app = express();
 
 
 
-require('./auth/google'); 
+require('./auth/Google'); 
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 connection();
